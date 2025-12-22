@@ -28,3 +28,13 @@ Content-Type: application/json
 }
 
 
+###
+POST 127.0.0.1:8000/auth/login
+Content-Type: application/json
+
+{
+  "email": "2440784496@qq.com",
+  "password": "111111"
+}
+
+

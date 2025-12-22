@@ -23,3 +23,17 @@ class UserCreateSchema(BaseModel):
     email: EmailStr
     password: RawPasswordStr
     username: UsernameStr
+
+class LoginIn(BaseModel):
+    email: EmailStr
+    password: RawPasswordStr
+
+class UserSchema(BaseModel):
+    id: int
+    email: EmailStr
+    username: UsernameStr
+
+
+class LoginOut(BaseModel):
+    user: UserSchema
+    token: str

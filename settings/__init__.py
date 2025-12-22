@@ -11,3 +11,9 @@ MAIL_SERVER="smtp.qq.com"
 MAIL_FROM_NAME="AiName起名助手"
 MAIL_STARTTLS=True
 MAIL_SSL_TLS=False
+
+from datetime import timedelta
+
+JWT_SECRET_KEY = "qwertyuiop"
+JWT_ACCESS_TOKEN_EXPIRES = timedelta(days=15)
+JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
