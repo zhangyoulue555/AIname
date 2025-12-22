@@ -13,3 +13,18 @@ GET 127.0.0.1:8000/mail/test?email=2440784496@qq.com
 
 ###
 GET 127.0.0.1:8000/auth/code?email=2440784496@qq.com
+
+
+###
+POST 127.0.0.1:8000/auth/register
+Content-Type: application/json
+
+{
+  "email": "2440784496@qq.com",
+  "username": "zyl",
+  "password": "111111",
+  "confirm_password": "111111",
+  "code": "6105"
+}
+
+
