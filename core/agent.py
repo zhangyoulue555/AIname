@@ -7,7 +7,7 @@ from langchain_deepseek import ChatDeepSeek
 from schemas.agent_schemas import NameResultSchema,NameSchema
 from schemas.name_schemas import NameIn
 
-os.environ['DEEPSEEK_API_KEY'] = "sk-6e84f91adb3f4ddca02593e28d82a134"
+os.environ['DEEPSEEK_API_KEY'] = "Api-key"
 
 llm = ChatDeepSeek(
     model="deepseek-chat",
